@@ -1,0 +1,175 @@
+#wysiwyg
+{
+    margin: 30px;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #4f412f;
+    font-size: 14px;
+    line-height: 165%;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media only screen and (min-width: 980px) and (max-width: 1219px)
+    {
+        margin: 30px 50px;
+    }
+
+    @media only screen and (min-width: 1220px)
+    {
+        margin: 30px 50px;
+    }
+
+    a
+    {
+        color: #C4562E;
+        text-decoration: underline;
+
+        &:hover
+        {
+            color: #748F49;
+        }
+    }
+
+    h1
+    {
+        box-sizing: border-box;
+        margin: 0;
+        margin: -30px 0 35px -30px;
+        padding: 15px 30px 10px 30px;
+        font-family: 'MyriadPro Bold';
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 100%;
+        color: white;
+        background: $orange;
+
+        a
+        {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        @media only screen and (min-width: 980px) and (max-width: 1219px)
+        {
+            width: 80%;
+            font-size: 30px;
+            margin: -30px 0 35px -50px;
+            padding: 20px 25px 15px 50px;
+        }
+
+        @media only screen and (min-width: 1220px)
+        {
+            width: 70%;
+            font-size: 32px;
+            margin: -30px 0 35px -50px;
+            padding: 25px 25px 20px 50px;
+        }
+    }
+
+    h2
+    {
+        margin: 30px 0 20px 0;
+        font-size: 20px;
+        line-height: 150%;
+        font-family: 'MyriadPro Bold';
+        font-weight: normal;
+        border-bottom: #a69d91 dotted 1px;
+    }
+
+    p
+    {
+        margin: 20px 0;
+    }
+
+    .alignnone {
+        margin: 5px 20px 20px 0;
+    }
+
+    .aligncenter,
+    div.aligncenter {
+        display: block;
+        margin: 5px auto 5px auto;
+    }
+
+    .alignright {
+        float:right;
+        margin: 5px 0 20px 20px;
+    }
+
+    .alignleft {
+        float: left;
+        margin: 5px 20px 20px 0;
+    }
+
+    a img.alignright {
+        float: right;
+        margin: 5px 0 20px 20px;
+    }
+
+    a img.alignnone {
+        margin: 5px 20px 20px 0;
+    }
+
+    a img.alignleft {
+        float: left;
+        margin: 5px 20px 20px 0;
+    }
+
+    a img.aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .wp-caption {
+        background: #fff;
+        border: 1px solid #f0f0f0;
+        max-width: 96%;
+        padding: 5px 3px 10px;
+        text-align: center;
+    }
+
+    .wp-caption.alignnone {
+        margin: 5px 20px 20px 0;
+    }
+
+    .wp-caption.alignleft {
+        margin: 5px 20px 20px 0;
+    }
+
+    .wp-caption.alignright {
+        margin: 5px 0 20px 20px;
+    }
+
+    .wp-caption img {
+        border: 0 none;
+        height: auto;
+        margin: 0;
+        max-width: 98.5%;
+        padding: 0;
+        width: auto;
+    }
+
+    .wp-caption p.wp-caption-text {
+        font-size: 11px;
+        line-height: 17px;
+        margin: 0;
+        padding: 0 4px 5px;
+    }
+
+    .size-auto,
+    .size-full,
+    .size-large,
+    .size-medium,
+    .size-thumbnail {
+        max-width: 100%;
+        height: auto;
+    }
+}
