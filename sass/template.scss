@@ -2,27 +2,23 @@
 $orange: #c4562e;
 $green: #748f49;
 
-::-moz-selection
-{
+::-moz-selection {
     background: #bc652e;
     color: white;
     text-shadow: none;
 }
 
-::selection
-{
+::selection {
     background: #bc652e;
     color: white;
     text-shadow: none;
 }
 
-html
-{
+html {
     background: #b5a289 url(../img/bg.png);
 }
 
-#header-texture
-{
+#header-texture {
     position: absolute;
     left: 0;
     top: 0;
@@ -32,14 +28,12 @@ html
     z-index: 1;
 }
 
-#container
-{
+#container {
     position: relative;
     z-index: 2;
     overflow: hidden;
 
-    #logo
-    {
+    #logo {
         position: absolute;
         display: block;
         font-size: 0;
@@ -47,25 +41,21 @@ html
         text-align: center;
         text-decoration: none;
 
-        .text
-        {
+        .text {
             display: inline-block;
             vertical-align: middle;
-
             white-space: normal;
             font-family: 'MyriadPro Bold';
             color: $orange;
             font-size: 35px;
             line-height: 1;
 
-            &:hover
-            {
+            &:hover {
                 color: #baa68d;
             }
         }
 
-        @media only screen and (max-width: 549px)
-        {
+        @media only screen and (max-width: 549px) {
             top: 55px;
             width: 100%;
 
@@ -75,8 +65,7 @@ html
             }
         }
 
-        @media only screen and (min-width: 550px)
-        {
+        @media only screen and (min-width: 550px) {
             .helper {
                 display: inline-block;
                 height: 100%;
@@ -90,32 +79,28 @@ html
             }
         }
 
-        @media only screen and (min-width: 550px) and (max-width: 767px)
-        {
+        @media only screen and (min-width: 550px) and (max-width: 767px) {
             left: 25px;
             top: 0;
             width: 285px;
             height: 135px;
         }
 
-        @media only screen and (min-width: 768px) and (max-width: 979px)
-        {
+        @media only screen and (min-width: 768px) and (max-width: 979px) {
             left: 15px;
             top: 0;
             width: 300px;
             height: 100px;
         }
 
-        @media only screen and (min-width: 980px) and (max-width: 1219px)
-        {
+        @media only screen and (min-width: 980px) and (max-width: 1219px) {
             left: 10px;
             top: 0;
             width: 255px;
             height: 160px;
         }
 
-        @media only screen and (min-width: 1220px)
-        {
+        @media only screen and (min-width: 1220px) {
             left: 15px;
             top: 0;
             width: 305px;
@@ -123,37 +108,31 @@ html
         }
     }
 
-    #sunday_services
-    {
+    #sunday_services {
         position: absolute;
         top: 40px;
-
         font-family: 'MyriadPro Semi Condensed';
         color: $orange;
         font-size: 18px;
         text-transform: uppercase;
 
-        strong
-        {
+        strong {
             color: #baa68d;
             font-weight: normal;
         }
     }
 
-    #header-menu
-    {
+    #header-menu {
         position: absolute;
         top: 25px;
         list-style: none;
         margin: 0;
         padding: 0;
 
-        li
-        {
+        li {
             display: inline-block;
 
-            a
-            {
+            a {
                 display: inline-block;
                 margin: 0 0 0 5px;
                 padding: 0 15px;
@@ -167,22 +146,18 @@ html
                 background: $green;
                 border-radius: 2px;
 
-                &:hover
-                {
+                &:hover {
                     background: $orange;
                 }
             }
 
-            &.show_menu
-            {
+            &.show_menu {
                 display: none;
             }
 
             &.facebook,
-            &.twitter
-            {
-                a
-                {
+            &.twitter {
+                a {
                     padding: 0;
                     width: 35px;
                     text-indent: -9999px;
@@ -190,25 +165,20 @@ html
                 }
             }
 
-            &.twitter
-            {
-                a
-                {
+            &.twitter {
+                a {
                     background-position: -35px 0;
                 }
             }
         }
     }
 
-    #content
-    {
+    #content {
         overflow: hidden;
         background: #f2ede6 url(../img/content_bg.jpg);
 
-        #banner
-        {
-            img
-            {
+        #banner {
+            img {
                 display: block;
                 width: 100%;
                 height: auto;
@@ -216,73 +186,61 @@ html
         }
     }
 
-    #address
-    {
+    #address {
         clear: both;
         color: white;
         font-size: 12px;
         font-family: 'Lucida Sans Unicode','Lucida Grande','Lucida Sans','DejaVu Sans Condensed',sans-serif;
         background: #748F49;
 
-        strong
-        {
+        strong {
             font-size: 14px;
         }
 
-        @media only screen and (max-width: 549px)
-        {
+        @media only screen and (max-width: 549px) {
             padding: 15px 25px;
         }
 
-        @media only screen and (min-width: 550px) and (max-width: 767px)
-        {
+        @media only screen and (min-width: 550px) and (max-width: 767px) {
             padding: 15px 20px 15px 50px;
 
-            strong
-            {
+            strong {
                 display: block;
             }
         }
 
-        @media only screen and (min-width: 768px) and (max-width: 979px)
-        {
+        @media only screen and (min-width: 768px) and (max-width: 979px) {
             width: 455px;
             padding: 15px 20px 15px 50px;
             margin: 0 0 0 225px;
 
-            strong
-            {
+            strong {
                 display: block;
             }
         }
 
-        @media only screen and (min-width: 980px) and (max-width: 1219px)
-        {
+        @media only screen and (min-width: 980px) and (max-width: 1219px) {
             width: 585px;
             padding: 15px 50px;
             margin: 0 0 0 275px;
 
-            strong
-            {
+            strong {
                 display: block;
             }
         }
 
-        @media only screen and (min-width: 1220px)
-        {
+        @media only screen and (min-width: 1220px) {
             width: 765px;
             padding: 15px 50px;
             margin: 0 0 0 335px;
         }
     }
 
-    #copyright
-    {
+    #copyright {
         clear: both;
         overflow: hidden;
 
-        p
-        {
+        p {
             margin: 0;
             color: #373027;
             font-family: 'Lucida Sans Unicode','Lucida Grande','Lucida Sans','DejaVu Sans Condensed',sans-serif;
@@ -290,129 +248,107 @@ html
             line-height: 100%;
             text-shadow: #c5b29b 1px 1px 0;
 
-            a
-            {
+            a {
                 color: #373027;
                 font-weight: bold;
                 text-decoration: none;
 
-                &:hover
-                {
+                &:hover {
                     border-bottom: white dotted 1px;
                     color: white;
                 }
             }
         }
 
-        @media only screen and (max-width: 767px)
-        {
+        @media only screen and (max-width: 767px) {
             padding: 15px 0;
 
-            p
-            {
+            p {
                 text-align: center;
 
-                &.software
-                {
+                &.software {
                     margin: 5px 0 0 0;
                 }
             }
         }
 
-        @media only screen and (min-width: 768px) and (max-width: 979px)
-        {
+        @media only screen and (min-width: 768px) and (max-width: 979px) {
             width: 525px;
             padding: 15px 0;
             margin: 0 0 0 225px;
 
-            p
-            {
+            p {
                 text-align: center;
 
-                &.software
-                {
+                &.software {
                     margin: 5px 0 0 0;
                 }
             }
         }
 
-        @media only screen and (min-width: 980px) and (max-width: 1219px)
-        {
+        @media only screen and (min-width: 980px) and (max-width: 1219px) {
             width: 665px;
             padding: 15px 10px;
             margin: 0 0 0 275px;
 
-            .church
-            {
+            .church {
                 float: left;
             }
 
-            .software
-            {
+            .software {
                 float: right;
             }
         }
 
-        @media only screen and (min-width: 1220px)
-        {
+        @media only screen and (min-width: 1220px) {
             width: 845px;
             padding: 15px 10px;
             margin: 0 0 0 335px;
 
-            .church
-            {
+            .church {
                 float: left;
             }
 
-            .software
-            {
+            .software {
                 float: right;
             }
         }
     }
 }
 
-@media only screen and (max-width: 549px)
-{
-    body
-    {
+@media only screen and (max-width: 549px) {
+    body {
         margin: 0px;
     }
 
-    #container
-    {
+    #container {
         width: 100%;
         padding: 220px 0 0 0;
 
-        #header-menu
-        {
+        #header-menu {
             left: 0px;
             top: 10px;
             width: 100%;
             text-align: center;
 
-            li.show_menu
-            {
+            li.show_menu {
                 display: inline-block;
 
-                a
-                {
+                a {
                     padding: 0 20px;
                 }
             }
         }
 
-        #sunday_services
-        {
+        #sunday_services {
             left: 0;
             width: 100%;
             top: 195px;
             font-size: 15px;
-            text-align: center
+            text-align: center;
         }
 
-        #menu
-        {
+        #menu {
             display: none;
             position: absolute;
             z-index: 200;
@@ -425,17 +361,14 @@ html
             list-style: none;
             background: #54453c;
 
-            &.show
-            {
+            &.show {
                 display: block;
             }
 
-            li
-            {
+            li {
                 padding: 0 15px 15px 15px;
 
-                a
-                {
+                a {
                     display: block;
                     margin: 0 0 5px 0;
                     padding: 15px 20px;
@@ -453,24 +386,20 @@ html
                     text-decoration: none;
                     text-align: center;
 
-                    &:hover
-                    {
+                    &:hover {
                         text-decoration: underline;
                     }
                 }
 
-                ul
-                {
+                ul {
                     list-style: none;
                     margin: 0;
                     padding: 0;
 
-                    li
-                    {
+                    li {
                         padding: 0;
 
-                        a
-                        {
+                        a {
                             padding: 8px 20px;
                             color: #e9dbd1;
                             font-size: 12px;
@@ -483,47 +412,39 @@ html
     }
 }
 
-@media only screen and (min-width: 550px) and (max-width: 767px)
-{
-    body
-    {
+@media only screen and (min-width: 550px) and (max-width: 767px) {
+    body {
         margin: 10px;
     }
 
-    #container
-    {
+    #container {
         margin: 0 auto;
         padding: 162px 0 0 0;
         width: 530px;
 
-        #sunday_services
-        {
+        #sunday_services {
             right: 2px;
             top: 135px;
             font-size: 15px;
         }
 
-        #header-menu
-        {
+        #header-menu {
             right: 0;
             top: 51px;
         }
 
-        #menu
-        {
+        #menu {
             list-style: none;
             margin: 0;
             padding: 10px 0;
             text-align: center;
             background: #716658 url(../img/menu_bg.jpg);
 
-            > li
-            {
+            > li {
                 display: inline-block;
                 font-size: 0;
 
-                > a
-                {
+                > a {
                     display: inline-block;
                     color: white;
                     font-size: 13px;
@@ -533,30 +454,23 @@ html
                     text-decoration: none;
                 }
 
-                ul
-                {
+                ul {
                     display: none;
                 }
 
-                &.selected
-                {
-                    a
-                    {
+                &.selected {
+                    a {
                         color: #1e1d1d;
                     }
                 }
 
-                &:hover
-                {
-
-                    > a
-                    {
+                &:hover {
+                    > a {
                         color: white !important;
                         background: #52493e url(../img/menu_selected_bg.jpg);
                     }
 
-                    ul
-                    {
+                    ul {
                         background: #52493e url(../img/menu_selected_bg.jpg);
                         display: block;
                         list-style: none;
@@ -564,27 +478,22 @@ html
                         padding: 10px;
                         position: absolute;
 
-                        li
-                        {
+                        li {
                             text-align: left;
                             padding: 3px 0;
 
-                            &.selected
-                            {
-                                a
-                                {
+                            &.selected {
+                                a {
                                     color: $orange;
                                 }
                             }
 
-                            a
-                            {
+                            a {
                                 color: white;
                                 font-size: 12px;
                                 text-decoration: none;
 
-                                &:hover
-                                {
+                                &:hover {
                                     color: $orange;
                                 }
                             }
@@ -594,17 +503,13 @@ html
             }
         }
 
-        #content
-        {
-            #banner
-            {
-                &.normal
-                {
+        #content {
+            #banner {
+                &.normal {
                     min-height: 151px;
                 }
 
-                &.large
-                {
+                &.large {
                     min-height: 264px;
                 }
             }
@@ -612,49 +517,39 @@ html
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 979px)
-{
-    body
-    {
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+    body {
         margin: 9px;
     }
 
-    #container
-    {
+    #container {
         margin: 0 auto;
         padding: 110px 0 0 0;
         width: 750px;
 
-        #sunday_services
-        {
+        #sunday_services {
             right: 10px;
             top: 65px;
         }
 
-        #header-menu
-        {
+        #header-menu {
             right: 10px;
         }
 
-        #menu
-        {
+        #menu {
             width: 225px;
         }
 
-        #content
-        {
+        #content {
             float: left;
             width: 525px;
 
-            #banner
-            {
-                &.normal
-                {
+            #banner {
+                &.normal {
                     min-height: 150px;
                 }
 
-                &.large
-                {
+                &.large {
                     min-height: 262px;
                 }
             }
@@ -662,49 +557,39 @@ html
     }
 }
 
-@media only screen and (min-width: 980px) and (max-width: 1219px)
-{
-    body
-    {
+@media only screen and (min-width: 980px) and (max-width: 1219px) {
+    body {
         margin: 10px;
     }
 
-    #container
-    {
+    #container {
         margin: 0 auto;
         padding: 80px 0 0 0;
         width: 960px;
 
-        #sunday_services
-        {
+        #sunday_services {
             left: 350px;
         }
 
-        #header-menu
-        {
+        #header-menu {
             right: 0;
         }
 
-        #menu
-        {
+        #menu {
             margin: 80px 0 0 0;
             width: 275px;
         }
 
-        #content
-        {
+        #content {
             float: left;
             width: 685px;
 
-            #banner
-            {
-                &.normal
-                {
+            #banner {
+                &.normal {
                     min-height: 195px;
                 }
 
-                &.large
-                {
+                &.large {
                     min-height: 342px;
                 }
             }
@@ -712,49 +597,39 @@ html
     }
 }
 
-@media only screen and (min-width: 1220px)
-{
-    body
-    {
+@media only screen and (min-width: 1220px) {
+    body {
         margin: 10px;
     }
 
-    #container
-    {
+    #container {
         margin: 0 auto;
         padding: 80px 0 0 0;
         width: 1200px;
 
-        #sunday_services
-        {
+        #sunday_services {
             left: 550px;
         }
 
-        #header-menu
-        {
+        #header-menu {
             right: 0;
         }
 
-        #menu
-        {
+        #menu {
             margin: 80px 0 0 0;
             width: 335px;
         }
 
-        #content
-        {
+        #content {
             float: left;
             width: 865px;
 
-            #banner
-            {
-                &.normal
-                {
+            #banner {
+                &.normal {
                     min-height: 247px;
                 }
 
-                &.large
-                {
+                &.large {
                     min-height: 432px;
                 }
             }
@@ -762,81 +637,63 @@ html
     }
 }
 
-
-@media only screen and (min-width: 768px)
-{
-    #menu
-    {
+@media only screen and (min-width: 768px) {
+    #menu {
         float: left;
         list-style: none;
         margin: 0;
         padding: 20px 0;
         background: #716658 url(../img/menu_bg.jpg);
-
         font-family: 'MyriadPro Semi Condensed';
         text-transform: uppercase;
         line-height: 100%;
 
-        > li
-        {
+        > li {
             margin: 0;
             padding: 15px 0 15px 35px;
 
-            &.selected
-            {
+            &.selected {
                 background: #52493e url(../img/menu_selected_bg.jpg);
 
-                ul
-                {
-                    li
-                    {
-                        a
-                        {
+                ul {
+                    li {
+                        a {
                             color: white;
 
-                            &:hover
-                            {
+                            &:hover {
                                 color: #c4562e;
                             }
-
                         }
                     }
                 }
             }
 
-            > a
-            {
+            > a {
                 color: white;
                 font-size: 20px;
                 text-decoration: none;
             }
 
-            ul
-            {
+            ul {
                 list-style: none;
                 margin: 0;
                 padding: 5px 0 0 10px;
 
-                li
-                {
+                li {
                     padding: 5px 0;
 
-                    &.selected
-                    {
-                        a
-                        {
+                    &.selected {
+                        a {
                             color: #c4562e;
                         }
                     }
 
-                    a
-                    {
+                    a {
                         color: black;
                         font-size: 15px;
                         text-decoration: none;
 
-                        &:hover
-                        {
+                        &:hover {
                             color: white;
                         }
                     }

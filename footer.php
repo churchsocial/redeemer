@@ -15,7 +15,7 @@
 
 <script src="<?php bloginfo('template_url') ?>/js/all.min.js"></script>
 
-<?php wp_footer() ?>4
+<?php wp_footer() ?>
 
 </body>
 </html>
