@@ -26,6 +26,10 @@ html {
     height: 220px;
     background: #1e1d1d url(../img/banner_bg.png);
     z-index: 1;
+
+    @media only screen and (max-width: 549px) {
+        height: 267px;
+    }
 }
 
 #container {
@@ -56,7 +60,7 @@ html {
         }
 
         @media only screen and (max-width: 549px) {
-            top: 55px;
+            top: 65px;
             width: 100%;
 
             img {
@@ -88,23 +92,23 @@ html {
 
         @media only screen and (min-width: 768px) and (max-width: 979px) {
             left: 15px;
-            top: 0;
+            top: 10px;
             width: 300px;
-            height: 100px;
+            height: 85px;
         }
 
         @media only screen and (min-width: 980px) and (max-width: 1219px) {
             left: 10px;
-            top: 0;
+            top: 15px;
             width: 255px;
-            height: 160px;
+            height: 145px;
         }
 
         @media only screen and (min-width: 1220px) {
-            left: 15px;
-            top: 0;
-            width: 305px;
-            height: 160px;
+            left: 20px;
+            top: 15px;
+            width: 295px;
+            height: 145px;
         }
     }
 
@@ -130,13 +134,14 @@ html {
         padding: 0;
 
         li {
+            overflow: hidden;
             display: inline-block;
 
             a {
                 display: inline-block;
                 margin: 0 0 0 5px;
-                padding: 0 15px;
-                height: 32px;
+                padding: 1px 15px 0 15px;
+                height: 31px;
                 color: white;
                 font-family: 'MyriadPro Semi Condensed';
                 font-size: 14px;
@@ -157,17 +162,11 @@ html {
 
             &.facebook,
             &.twitter {
-                a {
-                    padding: 0;
-                    width: 35px;
-                    text-indent: -9999px;
-                    background-image: url(../img/social_media_icons.png);
-                }
-            }
 
-            &.twitter {
                 a {
-                    background-position: -35px 0;
+                    font-size: 20px;
+                    padding-left: 5px;
+                    padding-right: 5px;
                 }
             }
         }
@@ -302,7 +301,7 @@ html {
 
         @media only screen and (min-width: 1220px) {
             width: 845px;
-            padding: 15px 10px;
+            padding: 15px 10px 25px 10px;
             margin: 0 0 0 335px;
 
             .church {
@@ -343,71 +342,9 @@ html {
         #sunday_services {
             left: 0;
             width: 100%;
-            top: 195px;
+            top: 190px;
             font-size: 15px;
             text-align: center;
-        }
-
-        #menu {
-            display: none;
-            position: absolute;
-            z-index: 200;
-            left: 0px;
-            top: 0px;
-            margin: 0;
-            padding: 15px 0 25px 0;
-            width: 100%;
-            min-height: 100%;
-            list-style: none;
-            background: #54453c;
-
-            &.show {
-                display: block;
-            }
-
-            li {
-                padding: 0 15px 15px 15px;
-
-                a {
-                    display: block;
-                    margin: 0 0 5px 0;
-                    padding: 15px 20px;
-                    background: #837166 url(../img/btn_bg.png) bottom repeat-x;
-                    border-color: #281910;
-                    border-radius: 3px;
-                    border-style: solid;
-                    border-width: 1px;
-                    color: white;
-                    font-size: 15px;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    line-height: 100%;
-                    text-shadow: #403128 1px 1px 0;
-                    text-decoration: none;
-                    text-align: center;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-
-                ul {
-                    list-style: none;
-                    margin: 0;
-                    padding: 0;
-
-                    li {
-                        padding: 0;
-
-                        a {
-                            padding: 8px 20px;
-                            color: #e9dbd1;
-                            font-size: 12px;
-                            text-transform: none;
-                        }
-                    }
-                }
-            }
         }
     }
 }
@@ -431,76 +368,6 @@ html {
         #header-menu {
             right: 0;
             top: 51px;
-        }
-
-        #menu {
-            list-style: none;
-            margin: 0;
-            padding: 10px 0;
-            text-align: center;
-            background: #716658 url(../img/menu_bg.jpg);
-
-            > li {
-                display: inline-block;
-                font-size: 0;
-
-                > a {
-                    display: inline-block;
-                    color: white;
-                    font-size: 13px;
-                    line-height: 100%;
-                    font-weight: bold;
-                    padding: 5px 8px;
-                    text-decoration: none;
-                }
-
-                ul {
-                    display: none;
-                }
-
-                &.selected {
-                    a {
-                        color: #1e1d1d;
-                    }
-                }
-
-                &:hover {
-                    > a {
-                        color: white !important;
-                        background: #52493e url(../img/menu_selected_bg.jpg);
-                    }
-
-                    ul {
-                        background: #52493e url(../img/menu_selected_bg.jpg);
-                        display: block;
-                        list-style: none;
-                        margin: 0;
-                        padding: 10px;
-                        position: absolute;
-
-                        li {
-                            text-align: left;
-                            padding: 3px 0;
-
-                            &.selected {
-                                a {
-                                    color: $orange;
-                                }
-                            }
-
-                            a {
-                                color: white;
-                                font-size: 12px;
-                                text-decoration: none;
-
-                                &:hover {
-                                    color: $orange;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         }
 
         #content {
@@ -534,10 +401,6 @@ html {
 
         #header-menu {
             right: 10px;
-        }
-
-        #menu {
-            width: 225px;
         }
 
         #content {
@@ -575,11 +438,6 @@ html {
             right: 0;
         }
 
-        #menu {
-            margin: 80px 0 0 0;
-            width: 275px;
-        }
-
         #content {
             float: left;
             width: 685px;
@@ -615,11 +473,6 @@ html {
             right: 0;
         }
 
-        #menu {
-            margin: 80px 0 0 0;
-            width: 335px;
-        }
-
         #content {
             float: left;
             width: 865px;
@@ -631,72 +484,6 @@ html {
 
                 &.large {
                     min-height: 432px;
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    #menu {
-        float: left;
-        list-style: none;
-        margin: 0;
-        padding: 20px 0;
-        background: #716658 url(../img/menu_bg.jpg);
-        font-family: 'MyriadPro Semi Condensed';
-        text-transform: uppercase;
-        line-height: 100%;
-
-        > li {
-            margin: 0;
-            padding: 15px 0 15px 35px;
-
-            &.selected {
-                background: #52493e url(../img/menu_selected_bg.jpg);
-
-                ul {
-                    li {
-                        a {
-                            color: white;
-
-                            &:hover {
-                                color: #c4562e;
-                            }
-                        }
-                    }
-                }
-            }
-
-            > a {
-                color: white;
-                font-size: 20px;
-                text-decoration: none;
-            }
-
-            ul {
-                list-style: none;
-                margin: 0;
-                padding: 5px 0 0 10px;
-
-                li {
-                    padding: 5px 0;
-
-                    &.selected {
-                        a {
-                            color: #c4562e;
-                        }
-                    }
-
-                    a {
-                        color: black;
-                        font-size: 15px;
-                        text-decoration: none;
-
-                        &:hover {
-                            color: white;
-                        }
-                    }
                 }
             }
         }

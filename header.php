@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php wp_title('|', true, 'right').bloginfo('name') ?></title>
     <meta name="description" content="<?php bloginfo('description')?>">
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/css/all.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/css/all.css?v=<?=wp_get_theme()->get('Version')?>" />
     <script src="<?php bloginfo('template_url') ?>/js/respond.js"></script>
     <?php wp_head() ?>
 </head>
@@ -35,23 +34,25 @@
     <ul id="header-menu">
         <li class="show_menu"><a href="#">Menu</a></li>
         <?php if (get_theme_mod('facebook')): ?>
-            <li class="facebook"><a href="<?=get_theme_mod('facebook')?>" target="_blank">Facebook</a></li>
+            <li class="facebook">
+                <a class="icon icon-facebook" href="<?=get_theme_mod('facebook')?>"></a>
+            </li>
         <?php endif ?>
         <?php if (get_theme_mod('twitter')): ?>
-            <li class="twitter"><a href="<?=get_theme_mod('twitter')?>" target="_blank">Twitter</a></li>
+            <li class="twitter">
+                <a class="icon icon-twitter" href="<?=get_theme_mod('twitter')?>"></a>
+            </li>
         <?php endif ?>
         <?php if (get_theme_mod('member_login')): ?>
-            <li class="login"><a href="<?=get_theme_mod('member_login')?>" rel="nofollow">Member Login</a></li>
+            <li class="login">
+                <a href="<?=get_theme_mod('member_login')?>">Member Login</a>
+            </li>
         <?php endif ?>
     </ul>
 
-    <?php wp_nav_menu([
-        'theme_location' => 'main_menu',
-        'depth' => 2,
-        'menu_id' => 'menu',
-        'menu_class' => 'menu',
-        'container' => '',
-    ]) ?>
+    <div id="menu">
+        <?=get_main_menu(2)?>
+    </div>
 
     <div id="content">
         <div id="banner">

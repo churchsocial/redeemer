@@ -1,0 +1,16 @@
+.button {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    border: 0;
+    outline: 0;
+    padding: 5px 25px;
+    color: white !important;
+    white-space: nowrap;
+    text-decoration: none !important;
+    background: #c4562e;
+    border-radius: 3px;
+
+    &:hover {
+        background: darken(#c4562e, 8%);
+    }
+}

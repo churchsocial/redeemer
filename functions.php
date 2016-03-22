@@ -1,12 +1,18 @@
 <?php
 
-// Register main menu
-register_nav_menu('main_menu', 'Main Menu');
+add_action('after_setup_theme', function ($test) {
 
-// Register custom images sizes
-add_theme_support('post-thumbnails');
-add_image_size('banner_large', 900, 450, true);
-add_image_size('banner_small', 900, 275, true);
+    // Enable title tag support
+    add_theme_support('title-tag');
+
+    // Register main menu
+    register_nav_menu('main_menu', 'Main Menu');
+
+    // Register custom images sizes
+    add_theme_support('post-thumbnails');
+    add_image_size('banner_large', 900, 450, true);
+    add_image_size('banner_small', 900, 275, true);
+});
 
 // Force upscaling of images
 add_filter(
@@ -33,7 +39,24 @@ add_filter(
 
 // Set content width
 if (!isset($content_width)) {
-    $content_width = 900;
+    $content_width = 765;
+}
+
+// Setup main menu
+function get_main_menu($depth = 1)
+{
+    wp_nav_menu([
+        'theme_location' => 'main_menu',
+        'depth' => $depth,
+        'container' => '',
+        'fallback_cb' => function () use ($depth) {
+            wp_nav_menu([
+                'depth' => $depth,
+                'container' => '',
+                'fallback_cb' => '',
+            ]);
+        },
+    ]);
 }
 
 // Setup custom theme options

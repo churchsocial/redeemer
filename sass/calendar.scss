@@ -1,0 +1,56 @@
+.church_social_calendar {
+    &__event_back_button {
+        @extend .button;
+    }
+
+    &__controls {
+        margin: 25px 0;
+    }
+
+    &__controls_link {
+        @extend .button;
+    }
+
+    &__table {
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+
+    &__day {
+        padding: 7px 5px;
+        width: 14.285%;
+        font-size: 12px;
+        line-height: 1.20;
+        vertical-align: top;
+        border: darken(#a69d91, 10%) dotted 1px;
+    }
+
+    &__day_wrap {
+        min-height: 100px;
+    }
+
+    &__day--today {
+        background: rgba(#a69d91, 0.2);
+    }
+
+    &__day_number {
+        display: block;
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+    &__event {
+        margin: 8px 0;
+    }
+
+    &__event_link {
+        text-decoration: none !important;
+
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+}
