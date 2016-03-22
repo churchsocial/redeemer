@@ -1,5 +1,5 @@
-$(function()
-{
+$(function() {
+
     // Configure responsive videos
     $('#wysiwyg').fitVids({
         customSelector: "iframe[src*='ustream.tv'], iframe[src*='livestream.com']"
