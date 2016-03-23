@@ -1,6 +1,6 @@
 <?php
 
-add_action('after_setup_theme', function ($test) {
+add_action('after_setup_theme', function () {
 
     // Enable title tag support
     add_theme_support('title-tag');
